@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block title %}
+: About Us
+{% endblock %}
+
+{% block style %}
+/* Set additional styling options for the columns */
+.column {
+    float: left;
+}
+
+/* Set width length for the left, right and middle columns */
+.left {
+    float: left;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+}
+
+.middle {
+    float: center;
+    width: 500px;
+    text-align: center;
+}
+
+.right {
+    float: right;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+{% endblock %}
+
+
+{% block body %}
+    <div class="row">
+        <div class="column left">
+            <h1>Sai Krish Naidu</h1>
+            <p>Leader</p>
+            <p>Knows neural networks and can make AI/ML models</p>
+        </div>
+        <div class="column middle">
+            <h1>Aronnya (Reaper) Pal</h1>
+            <p>Drip Master</p>
+            <p>Resident Genius</p>
+        </div>
+        <div class="column right">
+            <h1>Sujatro Ganguli</h1>
+            <p>Made this website</p>
+            <p>Jack of all trades Master of none</p>
+        </div>
+    </div>
+{% endblock %}
+
+
